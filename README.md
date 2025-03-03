@@ -10,12 +10,14 @@ Esse script está sob a licença GPLv3(+later).
 
 ## Uso
 
-Deve-se criar um arquivo de texto contendo a localização de todos os arquivos
+Deve-se criar uma pasta, contendo todos os arquivos
 que deveram ser concatenados. Depois disso, basta digitar no terminal:
 
 ```
-$ ./data_cat.sh files.txt
+$ ./data_cat.sh ./res
 ```
+
+Sendo `./res` o diretório da pasta.
 
 O script gerará o header `inc_data.h` e o arquivo binário `data.bin`,
 contendo todos os dados. Depois disso, basta ler o arquivo binário e incluir
