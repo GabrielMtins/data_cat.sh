@@ -7,13 +7,13 @@
 out_header="./inc_data.h"
 out_file="./data.bin"
 
-rm -f $out_header
-rm -f $out_file
-
 if [[ ! -d $1 || -z $1 ]]; then
 	echo "Input is not a folder."
 	exit 1
 fi
+
+rm -f $out_header
+rm -f $out_file
 
 touch $out_header
 touch $out_file
